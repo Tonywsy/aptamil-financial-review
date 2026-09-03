@@ -3,7 +3,7 @@
 <head>
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>爱他美财务拆解 · 证据页（FY2025 全年口径）</title>
+<title>爱他美财务拆解 · 证据页（FY2025 口径 · 全量复核版）</title>
 <script src='https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js'></script>
 <style>
   :root{ --blue:#1A4FA0; --navy:#0A1E3F; --ink:#11203a; --muted:#6b7a94; --line:#e3eaf5; --warn:#E8852B; --green:#2E9E6B; }
@@ -29,38 +29,46 @@
   .callout b{color:var(--warn)}
   .callout.blue{border-left-color:var(--blue);background:#f2f7ff}
   .callout.blue b{color:var(--blue)}
+  .callout.green{border-left-color:var(--green);background:#f0faf5}
+  .callout.green b{color:var(--green)}
   .src a{color:var(--blue);word-break:break-all}
   .src li{margin:6px 0;font-size:13px}
   .tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:6px;margin-right:6px}
   .tag.green{background:#e6f6ee;color:var(--green)}
   .tag.gray{background:#eef1f6;color:var(--muted)}
-  .tag.purple{background:#f1e9fb;color:#7b4fb0}
+  .tag.red{background:#fdeaea;color:#c0392b}
   footer{text-align:center;color:var(--muted);font-size:12px;padding:20px;line-height:1.7}
   .lv{font-size:12px;margin-left:6px}
+  table.kt{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}
+  table.kt th,table.kt td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  table.kt th{background:#f4f7fc;color:var(--blue)}
+  table.kt td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
 </style>
 </head>
 <body>
 
 <div class='hero'>
-  <div class='badge'>葵爸 · 财报拆解　|　口径：达能 FY2025 全年（2026-02-20 发布）</div>
-  <h1>爱他美财务拆解 · 三层漏斗 + 成本四面夹逼</h1>
-  <p>家长消费知情权 · 官方数据锁区间，估算数据标清楚</p>
+  <div class='badge'>葵爸 · 财报拆解　|　口径：达能 FY2025 全年（2026-02-20 发布）· 全量复核版</div>
+  <h1>爱他美 / 荷兰牛栏：成本结构能摸到哪一层？</h1>
+  <p>官方统计优先 · 每一格标来源与核验等级 · 不可知项明确留空</p>
 </div>
 
 <div class='wrap'>
 
   <!-- 关键数卡片 -->
   <div class='section'>
-    <h2>一图看懂关键数 <span class='lv'>（🟢官方/审计 · 🟠第三方/估算）</span></h2>
+    <h2>一图看懂关键数 <span class='lv'>（🟢官方/官方统计 · 🟠第三方/电商采集）</span></h2>
     <div class='cards'>
       <div class='card'><div class='k'>达能 FY2025 营收</div><div class='v'>272.83<small style='font-size:13px'>亿欧</small></div><div class='sub'>LFL +4.5%</div></div>
       <div class='card green'><div class='k'>专业特殊营养营收</div><div class='v'>92.77<small style='font-size:13px'>亿欧</small></div><div class='sub'>约占集团 1/3</div></div>
       <div class='card purple'><div class='k'>板块经营利润率</div><div class='v'>21.7%</div><div class='sub'>官方 · 上年 20.6%</div></div>
       <div class='card purple'><div class='k'>CNAO 区域利润率</div><div class='v'>29.2%</div><div class='sub'>官方 · 集团最高区</div></div>
       <div class='card'><div class='k'>CNAO 区域营收</div><div class='v'>39.53<small style='font-size:13px'>亿欧</small></div><div class='sub'>LFL +11.7%</div></div>
+      <div class='card'><div class='k'>进口婴配粉到岸均价</div><div class='v'>¥113<small style='font-size:13px'>/罐</small></div><div class='sub'>海关 2025 · 混合均价</div></div>
+      <div class='card green'><div class='k'>国产龙头婴配粉成本率</div><div class='v'>26.5%</div><div class='sub'>飞鹤 2025 年报口径</div></div>
       <div class='card green'><div class='k'>爱他美中国份额</div><div class='v'>14%</div><div class='sub'>Kantar 单品牌</div></div>
     </div>
-    <div class='chart-s'>🟢 <b>FY2025 全年（达能 2026-02-20 官方业绩发布）</b>：集团营收 272.83 亿欧元（LFL +4.5%）、经常性经营利润率 13.4%；专业特殊营养 92.77 亿欧元（约 93 亿）；分品类经常性经营利润率：专业特殊营养 21.7%（上年 20.6%，+112bps）；分区域：中国·北亚·大洋洲（CNAO）39.53 亿欧元（LFL +11.7%）、区域经常性经营利润率 29.2%（上年 29.4%）。<br>🟢 CNAO 大区专业特殊营养收入 27.68 亿欧元、同比 +13.2%（达能官方 FY2025 分品类×分区域表；此前新浪财经报道误标为「中国区」口径，已修正为 CNAO 大区）。爱他美中国单品牌份额 14%（Kantar，🟠），欧睿口径达能集团含诺优能约 15%（🟠），两口径勿混。<br>⚠️ <b>板块 ≠ 品类 ≠ 品牌</b>：专业特殊营养含生命早期营养 + 医学营养 + 健康老龄化；CNAO 29.2% 是区域整体（含水、乳品）口径。两者都不是爱他美口径。</div>
+    <div class='chart-s'>🟢 <b>达能 FY2025 全年（2026-02-20 官方业绩发布）</b>：集团营收 272.83 亿欧元（LFL +4.5%）、经常性经营利润率 13.4%；专业特殊营养 92.77 亿欧元；分品类经常性经营利润率：专业特殊营养 21.7%（上年 20.6%，+112bps）；CNAO 大区 39.53 亿欧元（LFL +11.7%）、区域经常性经营利润率 29.2%（上年 29.4%）；CNAO 大区专业特殊营养全年 27.68 亿欧元（+13.2%，官方分品类×区域表）。<br>🟢 <b>中国海关（经中国奶业协会发布）</b>：2025 年进口婴配粉 21.81 万吨、45.53 亿美元，<b>均价 20,878 美元/吨（≈¥113/罐 800g）</b>。<br>🟢 <b>中国飞鹤 2025 年报</b>：婴配粉收入 158.68 亿元、毛利 116.65 亿元、<b>毛利率 73.5%（销售成本率 26.5%）</b>。<br>🟠 爱他美中国单品牌份额 14%（Kantar）；欧睿口径达能集团含诺优能约 15%，两口径勿混。<br>⚠️ <b>板块 ≠ 品类 ≠ 品牌</b>：专业特殊营养含生命早期营养 + 医学营养 + 健康老龄化；CNAO 29.2% 是区域整体（含水、乳品）口径；到岸均价是<b>全行业混合均价</b>。三者都不是爱他美口径。</div>
   </div>
 
   <!-- 核心图1：三层官方漏斗 -->
@@ -68,23 +76,23 @@
     <h2>核心图①：达能官方「三层利润率漏斗」（FY2025，%）</h2>
     <p class='section-desc'>达能不告诉你爱他美赚多少，但官方审计口径的三层数字，把答案约束在一个区间里。</p>
     <div id='chartFunnel' class='chart'></div>
-    <div class='chart-s'>🟢 三层均为达能 FY2025 官方「经常性经营利润率」口径（已扣销售/研发/管理费用）：集团 13.4% → 专业特殊营养板块 21.7% → CNAO 区域 29.2%。<br>📌 读法：爱他美所在的板块（21.7%）比集团均值（13.4%）赚得多；而以奶粉为主力的中国·北亚·大洋洲区（29.2%）是达能全球利润率最高的区域——是集团的两倍多。<b>爱他美单品的真实利润率被官方口径约束在 20%~30% 区间</b>，精确值达能不披露。</div>
+    <div class='chart-s'>🟢 三层均为达能 FY2025 官方「经常性经营利润率」口径（已扣销售/研发/管理费用）：集团 13.4% → 专业特殊营养板块 21.7% → CNAO 区域 29.2%。<br>📌 读法：爱他美所在的板块（21.7%）比集团均值（13.4%）赚得多；以奶粉为主力的中国·北亚·大洋洲区（29.2%）是达能全球利润率最高的区域。<br>⚠️ <b>不能这么推</b>：21.7% 是<b>板块口径</b>（含医学营养、健康老龄化），29.2% 是<b>区域口径</b>（含水、乳品等全品类）——两者覆盖的集合并不交叉，<b>推不出"爱他美利润率在 20%–30% 之间"这个上下界</b>。严谨说法是：<b>两个官方口径共同指向，达能这门以奶粉为主力的生意在中国区的盈利能力显著高于集团平均；但达能从未披露"爱他美"品牌口径的利润率，任何具体数字都是推算而非披露。</b><br>⚠️ 这三个数字是<b>达能集团内部口径</b>，只与达能自身可比；与飞鹤 73.5% 的「毛利率」口径不同，不可横比。</div>
   </div>
 
-  <!-- 核心图2：成本四面夹逼之 价格阶梯 -->
+  <!-- 核心图2：可核价格链 -->
   <div class='section'>
-    <h2>核心图②：一罐 800g，五段价格阶梯（元/罐）</h2>
-    <p class='section-desc'>五段是<b>五套口径</b>：原料实算 → 生产硬成本测算 → 国际含渠道零售价 → 国内终端价。最后两根必须分开看：从在售主力 SKU 价位看，<b>经典档更贴近成交主流，超高端（领熠）是塔尖</b>（推断：达能不披露分产品线销量占比）──不能用塔尖价代表这个品牌。</p>
-    <div id='chartSqueeze' class='chart'></div>
-    <div class='chart-s'>🟢 原料 ¥20–35：按 GDT 国际乳制品拍卖实算（Event 403，2026 年 5 月：脱脂奶粉 $3,547/吨、全脂粉 $3,741/吨；WPC80 浓缩乳清蛋白约 €20,000/吨，StoneX，同比涨近 90%）。800g 一罐的原料成本可直接算出，任何品牌都一样。<br>🟠 生产硬成本 ¥80–100：行业测算（王丁棉调研），含加工、包装、质检，非爱他美官方披露。<br>🟠 国际含渠道零售价 ~¥142：到岸 64.7 + 岸上渠道加价 77.72，<b>非达能出厂价</b>。<br>🟠 <b>经典款终端 ¥165–210</b>：爱他美经典版 3 段 800g（天猫旗舰店常卖 ¥164.8、专营店常卖 ¥210，2026-09-04 采集；大促可到 ¥149.8–174）。<br>🟠 <b>超高端终端 ¥338–385</b>：爱他美领熠 3 段 800g（线下公示 ¥338，2024-03；京东 2 段 3 罐装 ¥1154.9 折合约 ¥385/罐，2026-09 采集）。<br>⚠️ 以上终端价含渠道与门店利润，<b>不进达能财报</b>；电商与促销价波动大，采集时点见标注。</div>
+    <h2>核心图②：从原料到货架——四段「可核」价格（元/800g）</h2>
+    <p class='section-desc'>本图全部使用<b>公开统计与拍卖数据</b>，不使用任何无出处的行业测算。四段是四套口径，逐段看。</p>
+    <div id='chartCost' class='chart'></div>
+    <div class='chart-s'>🟢 <b>① 大宗乳原料 ¥18.3</b>：按 GDT 第 406 次拍卖（2026-06-16）脱脂奶粉 3,368 美元/吨实算（中国奶业协会月报 2026-07 发布）；全脂粉 3,589 美元/吨 → ¥19.5。中国进口大包奶粉均价 4,188 美元/吨（海关 2025）→ ¥22.7；乳清 1,283 美元/吨 → ¥7.0。<b>这只是大宗乳原料，不是全部配方成本</b>。<br>🟢 <b>② 进口婴配粉到岸均价 ¥113.3</b>：海关 2025 年进口均价 20,878 美元/吨（21.81 万吨 / 45.53 亿美元）。<b>这是 CIF 到岸价</b>（含国际运费保险，未含关税与进口环节税）。⚠️ 它<b>不是</b>达能的出厂价、也<b>不是</b>达能的报关价——达能中国进口属集团内部关联交易，转让定价不公开，且不等同于制造成本；这个数字说明的是<b>"进口婴配粉到中国口岸的价格水位"</b>。<br>🟠 <b>③ 中国终端·经典档 ¥164.8–210</b>：爱他美经典版 3 段 800g（天猫 2026-09-04 采集）。<br>🟠 <b>④ 中国终端·超高端档 ¥338–385</b>：爱他美领熠（扬州市发改委民生价格公示 2024-03：3 段 ¥338；京东 2 段 800g×3 罐 ¥1154.9 ÷ 3 = ¥385，2026-09 采集）。<br>📌 <b>口岸到终端的价差</b>：经典档 ¥51.5–96.7（45%–85%）；超高端档 ¥224.7–271.7（198%–240%）。<b>这是"价差"不是"净加价"</b>——其中含关税与进口环节税（到岸价不含税、终端价含税，仅增值税价内倒推就约占终端 11.5%）、国内物流仓储、渠道层级、营销投入与各方利润，<b>具体拆分无公开数据，本页不做分配</b>。<br>⚠️ <b>口径硬约束（重要）</b>：② 是全行业<b>混合</b>均价（欧盟 66.7%、新西兰 29.1%、瑞士 1.6%，且含各档次产品），用它去减③/④ 的单一档次终端价，只是<b>量级示意</b>，不是该档的真实到岸成本——混合均价里含超高端，会低估经典档的真实到岸、高估其价差。<b>不可套到达能任何单一 SKU 上</b>；③ 与 ④ 是两个档次，也不可混用。</div>
   </div>
 
-  <!-- 核心图3：同业毛利率锚 -->
+  <!-- 核心图3：100元去哪了 -->
   <div class='section'>
-    <h2>核心图③：同业毛利率锚——奶粉行业「贵在卖不在造」（%）</h2>
-    <p class='section-desc'>达能不披露爱他美毛利，但纯奶粉上市公司披露。同一批 GDT 原料、同喷雾干燥工艺、同母婴渠道，结构可参考。</p>
-    <div id='chartPeer' class='chart'></div>
-    <div class='chart-s'>🟢 飞鹤 2025 年报：婴配粉毛利率 73.5%（2023 年 69.4% → 2024 年 71.3% → 2025 年 73.5%，逐年上行）；销售费用率 39.5%——每 100 元收入约 39.5 元花在销售上。<br>🟢 H&H（健合）62.45%、澳优 38.64%（2024 年报口径，⚠️ 前者含成人营养、后者含 B2B 原料业务，非纯婴配粉口径，仅列参照）。<br>⚠️ <b>口径红线</b>：这三家是「毛利率」口径；达能的 21.7% 是「经营利润率」口径（毛利再扣掉销售/研发/管理费用），<b>两组数字不可直接横比</b>。参考的是结构结论：奶粉的钱大头花在营销与渠道，不在原料。</div>
+    <h2>核心图③：飞鹤 2025 年报的两个口径支出结构（% · <b style='color:#c0392b;font-size:14px'>分母不同，不可相加</b>）</h2>
+    <p class='section-desc'>达能不披露爱他美的成本与费用拆分，纯奶粉上市公司披露。此处用作<b>量级参照</b>，不是推算爱他美；且飞鹤<b>不披露分部门费用</b>，故只有"婴配粉口径的成本率"与"集团口径的费用率"，两者分母不同。</p>
+    <div id='chartWhere' class='chart'></div>
+    <div class='chart-s'>🟢 <b>婴配粉口径</b>：中国飞鹤 2025 年报——婴配粉收入 158.68 亿元、毛利 116.65 亿元，<b>毛利率 73.5%，即销售成本率 26.5%</b>（2023 年 69.4% → 2024 年 71.3% → 2025 年 73.5%，逐年上行）。<br>🟢 <b>集团口径主要支出（占营业收入 181.13 亿元）</b>：销售成本 63.37 亿（<b>35.0%</b>，集团口径，含毛利仅 1.0% 的其他乳制品，故高于婴配粉口径的 26.5%）、<b>销售及经销开支 71.62 亿（39.5%）</b>、行政开支 16.83 亿（9.3%）、年内溢利 20.94 亿（11.6%；<b>归母净利润 19.39 亿，归母净利率 10.7%</b>）。<br>⚠️ <b>四根柱子的分母不同</b>：第 1 根是"婴配粉分部收入"，第 2–4 根是"集团营业收入"，<b>相加不等于 100%，也不可互相加减</b>。本图只用于对比"成本率"与"销售费用率"的量级。<br>📌 读法：<b>在国产龙头的账上，销售费用率（39.5%，集团口径）高于婴配粉的生产物料成本率（26.5%，分部口径）</b>——"贵在卖，不在造"这句话有年报支撑，但请注意两个口径不同。<br>🟢 第三方同业（仅列参照，<b>跨品牌、口径不同，不可直接比较</b>）：H&amp;H 健合 62.45%、澳优 38.64%（均为 2024 年报毛利率；前者含成人营养、后者含 B2B 原料业务）。<br>⚠️ <b>跨品牌红线</b>：飞鹤是中国本土垂直一体化乳企（自有牧场、奶源自给），爱他美/荷兰牛栏为达能旗下欧洲生产、跨境或一般贸易进口品牌，<b>成本结构不具可比性</b>。此图的用途仅限于回答"婴配粉这门生意的钱大致花在哪"，不能用来推算爱他美。</div>
   </div>
 
   <!-- 核心图4：中国份额 -->
@@ -92,62 +100,116 @@
     <h2>核心图④：中国婴配粉市场份额（%）</h2>
     <p class='section-desc'>爱他美单品牌第二；达能集团（含诺优能）口径另算。</p>
     <div id='chartShare' class='chart'></div>
-    <div class='chart-s'>🟠 本图为行业惯用排名示意：<b>飞鹤/伊利/达能集团/雀巢/菲仕兰为欧睿集团口径，爱他美 14% 为 Kantar 单品牌口径</b>——两套统计口径不同，柱高仅供示意排序，勿跨口径直接比较大小。爱他美单品牌 14%（Kantar Worldpanel）；达能集团含诺优能 15.0%、飞鹤 17.5% 第一（欧睿）。<br>🟠 达能 FY2025 财报未单独披露中国数字；CNAO 大区专业特殊营养<b>全年</b> 27.68 亿欧元（+13.2%，官方分品类×区域表）；CNAO 专业营养<b>前三季</b> 20.48 亿欧元、同比 +14.2%（Q3 +17.0%，2025 三季报口径，非全年，勿与全年数并列对比）——同期中国婴配粉大盘零售额为微降（尼尔森 IQ 年度 −0.2%），逆势增长。</div>
+    <div class='chart-s'>🟠 本图为行业惯用排名示意：<b>飞鹤/伊利/达能集团/雀巢/菲仕兰为欧睿集团口径，爱他美 14% 为 Kantar 单品牌口径</b>——两套统计口径不同，柱高仅供示意排序，勿跨口径直接比较大小。<br>🟢 达能 FY2025 财报未单独披露中国数字；CNAO 大区专业特殊营养<b>全年</b> 27.68 亿欧元（+13.2%，官方分品类×区域表）；CNAO 专业营养<b>前三季</b> 20.48 亿欧元、同比 +14.2%（Q3 +17.0%，2025 三季报口径，非全年，勿与全年数并列对比）——同期中国婴配粉大盘零售额为微降（尼尔森 IQ 年度 −0.2%），逆势增长。</div>
   </div>
 
-  <!-- 核心图5：超高端 + 成本结构 -->
+  <!-- 核心图5：进口来源 + 价格带 -->
   <div class='section'>
-    <h2>核心图⑤：超高端价格带 &amp; 一罐生产成本结构</h2>
-    <p class='section-desc'>左：价格带结构（为什么大家挤超高端）；右：生产端成本占比（贵在「卖」不在「造」）。</p>
-    <div id='chartPremium' class='chart'></div>
-    <div class='chart-s'>🟠 左图价格带结构为 2025 年 1–4 月尼尔森口径（超高端 31.2%）；右下引述的「超高端份额 37%」为尼尔森 IQ <b>2024 年</b>数据（&gt;430 元/kg，同比 +4.2pct）——<b>两者时点与口径不同，请勿直接相加或对比</b>。<br>🟠 成本结构（原材料 60% / 人工 30% / 包材 10%）为行业观点（蒋正振），生产端口径。行业背景：2025 年中国新生人口 792 万（国家统计局，同比 −162 万）——大盘在缩，玩家被迫上探超高端。</div>
+    <h2>核心图⑤：中国进口婴配粉来源结构 &amp; 国内价格带结构</h2>
+    <p class='section-desc'>左：谁在往中国卖婴配粉（海关 2025，硬数据）；右：国内价格带结构（尼尔森，标注时点）。</p>
+    <div id='chartSource' class='chart'></div>
+    <div class='chart-s'>🟢 <b>进口来源（海关 2025）</b>：全年进口婴配粉 21.81 万吨，其中<b>欧盟 14.54 万吨（66.7%）</b>、新西兰 6.36 万吨（29.1%）、瑞士 0.35 万吨（1.6%）、其余约 2.6%。爱他美与荷兰牛栏的欧洲产能，主要就在这 66.7% 里。<br>🟠 <b>价格带结构</b>：2025 年 1–4 月尼尔森口径，超高端 31.2%、超高端+ 33.2%、高端 24.2%、中高端 8.6%、中低端 2.7%。另引述的「超高端（&gt;430 元/kg）份额 37%」为尼尔森 IQ <b>2024 年</b>数据——<b>两者时点与口径不同，请勿直接相加或对比</b>。<br>🟢 行业背景：2025 年中国新生人口 792 万（国家统计局，同比 −162 万）；2026 年 6 月 10 主产省份生鲜乳均价 3.03 元/公斤（农业农村部监测）。大盘在缩、奶价在底部，品牌被迫上探超高端。</div>
   </div>
 
-  <!-- 同档对齐全球比价 -->
+  <!-- 核心图6：同档对齐 -->
   <div class='section'>
     <h2>核心图⑥：同档次对齐比价——欧洲超市 vs 中国终端（元/800g）</h2>
-    <p class='section-desc'>关键修正：上一版拿「荷兰超市经典款」去对「国行超高端领熠」，属<b>跨档比价</b>，把价差放大到了 3.2 倍。档次对齐后，结论完全不同。</p>
+    <p class='section-desc'>本图修正了上一版的<b>跨档比价</b>错误（用欧洲经典款对中国超高端，把价差夸大到 3.2 倍）。档次对齐后结论完全不同。</p>
     <div id='chartGeo' class='chart'></div>
-    <div class='chart-s'>🟠 <b>经典档（欧洲 2 段 vs 中国 3 段）</b>：荷兰 Nutrilon 2 段 800g <b>€19.99–23.99</b>（≈¥156–188；€19.99 为 IndexBox 2026-05 报告的荷兰单一锚点，€23.99/€23.59 为 2026-09 荷兰其他渠道建议零售价）vs 中国爱他美经典版 <b>3 段</b> 800g <b>¥164.8–210</b>（天猫 2026-09-04 采集）→ <b>0.88–1.34 倍，两端基本同价</b>。<br>🟠 <b>超高端档（2 段对 2 段）</b>：德国超市 Aptamil Profutura <b>2 段</b> 800g <b>€22.99</b>（≈¥180，Rossmann/dm，IndexBox）vs 中国爱他美领熠 <b>¥338（3 段，2024-03 线下公示）–¥385（2 段，2026-09 京东）</b> → <b>1.88–2.14 倍</b>。<br>🟠 参照组（换成欧洲跨境电商价，含电商/代购加价）：经典档 Aptamil 800g €26.39（≈¥206）vs 中国 ¥164.8–210 → <b>0.80–1.02 倍，中国跨境版甚至更便宜</b>；超高端 Profutura €37.22（≈¥291）vs 领熠 ¥338–385 → 1.16–1.32 倍。<br>⚠️ <b>段位与时点差异提示</b>：同一产品线通常 2 段贵于 3 段（扬州市发改委公示：领熠 1 段 ¥395 / 2 段 ¥366 / 3 段 ¥338），经典档两端段位未完全对齐（欧 2 段 vs 中 3 段），因此 0.88–1.35 倍属<b>量级参考而非精确差价</b>；超高端档已尽量按 2 段对齐。<br>📌 读法：<b>溢价集中在超高端档，经典档与欧洲本土价基本持平</b>。多付的钱主要在「买塔尖配方 + 渠道层级」，不是因为"进口就贵"。汇率按 1 欧元 = 7.8208 元（中国外汇交易中心 2026-09-03 中间价）折算。<br>⚠️ 命名红线：<b>荷兰牛栏 = Nutrilon（大陆官方中文名「诺优能」）</b>；英国/港版「牛栏牌」= Cow &amp; Gate，是另一个品牌。两者都属达能，但视频里提「牛栏」必须点明是哪一个。</div>
+    <div class='chart-s'>🟠 <b>经典档（欧洲 2 段 vs 中国 3 段）</b>：荷兰 Nutrilon 2 段 800g <b>€19.99–23.99</b>（≈¥156–188）vs 中国爱他美经典版 <b>3 段</b> 800g <b>¥164.8–210</b>。其中 €19.99 为 IndexBox 2026-05 报告的荷兰锚点（etos.nl）；€23.99 / €23.59 为 2026-09 荷兰其他渠道零售价观察值（hollandpharma / gezondheidsaanhuis 建议零售价、Jumbo），<b>该两项未留存可公开索引链接，仅作区间参照</b>。<br>📊 <b>怎么比才严谨</b>：两端区间高度重叠——按<b>同端点</b>比较为 <b>1.05–1.12 倍</b>（164.8÷156 与 210÷188），即基本同价；若按<b>极值交叉</b>（最低中国价÷最高欧洲价）则为 0.88–1.34 倍。<b>本图采用同端点区间 1.05–1.12 倍作为结论</b>，极值区间仅列示以说明锚点敏感性。<br>🟠 <b>超高端档（2 段对 2 段）</b>：德国超市 Aptamil Profutura <b>2 段</b> €22.99（≈¥180）vs 中国爱他美领熠 <b>¥338（3 段，2024-03 公示）–¥385（2 段，2026-09 京东）</b> → <b>1.88–2.14 倍</b>。<br>🟠 参照组（欧洲跨境电商价，含电商/代购加价）：经典档 Aptamil €26.39（≈¥206）vs 中国 ¥164.8–210 → 0.80–1.02 倍；超高端 Profutura €37.22（≈¥291）vs ¥338–385 → 1.16–1.32 倍。<br>⚠️ <b>跨品牌/跨产品提示</b>：荷兰牛栏（Nutrilon）与爱他美（Aptamil）是达能旗下<b>两个不同品牌</b>；德国 Profutura 与国行"领熠"也<b>不是同一产品</b>（领熠为达能中国产品线）。本图比的是<b>同集团、同档次</b>，不是同款同配方。<br>⚠️ <b>段位与时点</b>：同一产品线通常 2 段贵于 3 段（扬州公示：领熠 1 段 ¥395 / 2 段 ¥366 / 3 段 ¥338）；经典档两端段位未完全对齐，倍率属<b>量级参考</b>。<br>⚠️ <b>命名红线</b>：荷兰牛栏 = Nutrilon（大陆官方中文名「诺优能」）；英国/港版「牛栏牌」= Cow &amp; Gate，是另一个品牌。汇率 1 欧元 = 7.8208 元（中国外汇交易中心 2026-09-03 中间价）。</div>
   </div>
 
-  <div class='callout'>
-    <b>档次对齐红线（本次修正的核心）：</b>① 从在售主力 SKU 价位看，爱他美/荷兰牛栏的<b>经典档更贴近成交主流</b>（天猫经典版常卖 ¥164.8–210），超高端领熠（¥338–385）是塔尖产品——<b>这是推断，达能不披露分产品线销量占比，本页不给出任何占比数字</b>；② 跨档比价会严重放大差价：旧版用「荷兰经典款（≈¥156）vs 国行领熠标价 ¥500（旧版采集的标价，现已废止）」算出 <b>3.2 倍，属失真</b>；档次对齐后经典档 0.88–1.35 倍、超高端档 1.88–2.14 倍；③ 欧洲「超市价」与「跨境电商/代购价」是两套口径（后者含代购加价），国内「跨境版 vs 国行」也需分别对齐；④ <b>锚点敏感性</b>：荷兰经典档价格在不同渠道存在 €19.99–23.99 的差异，倍率对锚点高度敏感（取 €23.99 时经典档仅 0.88–1.12 倍），故本图给区间不给点值；⑤ 两端段位与采集时点不完全一致，比对结果为<b>量级参考</b>。
+  <!-- 成本结构：可知 vs 不可知 -->
+  <div class='section'>
+    <h2>核心结论：达能这几款婴配粉的成本结构，能摸到哪一层？</h2>
+    <p class='section-desc'>把「能查证的」和「查不到的」分开列——这是本页最重要的表格，也是竞品与同行唯一无法反驳的写法。</p>
+    <table class='kt'>
+      <tr><th style='width:22%'>层级</th><th style='width:26%'>能拿到什么</th><th>数值与口径</th><th style='width:16%'>核验</th></tr>
+      <tr>
+        <td><b>① 大宗乳原料</b></td>
+        <td>GDT 拍卖价 / 海关进口均价（公开统计）</td>
+        <td class='n'>脱脂粉 $3,368/吨（GDT 第406次，2026-06-16）→ ¥18.3/罐；大包奶粉进口均价 $4,188/吨 → ¥22.7；乳清 $1,283/吨 → ¥7.0</td>
+        <td>🟢 官方统计</td>
+      </tr>
+      <tr>
+        <td><b>② 到岸成本</b></td>
+        <td>中国海关进口婴配粉均价（CIF，含国际运保费）</td>
+        <td class='n'>$20,878/吨 → <b>¥113.3/罐（800g）</b>；欧盟占进口量 66.7%<br><b>混合均价，不可套单品</b></td>
+        <td>🟢 官方统计</td>
+      </tr>
+      <tr>
+        <td><b>③ 生产物料成本率</b></td>
+        <td>国产龙头婴配粉分部年报口径</td>
+        <td class='n'>飞鹤婴配粉毛利率 73.5% → <b>销售成本率 26.5%</b>（含自有牧场折旧与人工）<br>跨品牌，仅作量级参照</td>
+        <td>🟢 年报原文</td>
+      </tr>
+      <tr>
+        <td><b>④ 口岸之后的加价</b></td>
+        <td>到岸均价 vs 终端零售价之差</td>
+        <td class='n'>经典档 +¥51.5–96.7（45%–85%）；超高端档 +¥224.7–271.7（198%–240%）<br><b>税费/渠道/营销的具体拆分无公开数据，不做分配</b></td>
+        <td>🟠 计算值</td>
+      </tr>
+      <tr>
+        <td><b>⑤ 营销费用量级</b></td>
+        <td>国产龙头集团口径销售及经销开支</td>
+        <td class='n'>飞鹤 71.62 亿元，占营收 <b>39.5%</b>；婴配粉口径成本率仅 26.5%<br>→ 销售费用 &gt; 生产物料成本</td>
+        <td>🟢 年报原文</td>
+      </tr>
+      <tr>
+        <td><b>⑥ 达能侧利润</b></td>
+        <td>达能官方三层经常性经营利润率</td>
+        <td class='n'>集团 13.4% → 板块 21.7% → CNAO 29.2%<br>→ <b>两者集合不相交，推不出单品上下界</b>；只能说中国区盈利能力显著高于集团平均</td>
+        <td>🟢 官方披露</td>
+      </tr>
+      <tr style='background:#fdf5f5'>
+        <td><b>🚫 查不到（禁填）</b></td>
+        <td>达能与外部均不披露</td>
+        <td>爱他美/诺优能<b>单 SKU</b> 的成本与毛利；配方成本（HMO/OPO/乳铁蛋白等添加成本）；<b>达能出厂价</b>（报关价不公开）；经典款 vs 领熠 的销量/销售额占比；专业营养板块内 婴配粉 vs 医学营养 的拆分</td>
+        <td><span class='tag red'>🚫 宁可留空</span></td>
+      </tr>
+    </table>
+    <div class='callout green'>
+      <b>一句话结论（只说数据能证明的）：</b>一罐达能系婴配粉（爱他美 / 荷兰牛栏 800g）的制造成本，<b>达能不披露，外部无法确证</b>。能确证的只有三件事：① <b>下限</b>：光是大宗乳原料就要 ¥18–23（GDT 拍卖价与海关大包粉均价实算），而这还不含油脂、营养素预混料、功能配料与加工包装，所以真实成本必定更高；② <b>行业参照</b>：进口婴配粉到中国口岸的价格水位是 ¥113/罐（海关 2025 全行业混合 CIF 均价，已含各品牌出口方利润与国际物流）——<b>它不是达能的成本，也不是达能的报关价</b>（达能中国进口属集团内部关联交易，转让定价不公开且不等同于制造成本）；③ <b>结构参照</b>：国产龙头婴配粉口径的销售成本率为 26.5%（飞鹤 2025 年报，跨品牌仅作量级参照）。<br>真正拉开终端价的是<b>口岸之后的税费、渠道层级与营销投入</b>（口岸到终端价差：经典档 45%–85%，超高端档 198%–240%，含税费，非净加价），以及<b>达能在中国区的盈利能力（CNAO 区域经常性经营利润率 29.2%，官方，为区域口径）</b>。<b>精确到小数点的"爱他美成本表"不存在，谁给谁就是在编。</b>
+    </div>
   </div>
 
   <!-- 口径红线 -->
   <div class='callout blue'>
-    <b>必须先说清的披露边界：</b>达能<b>从不单独披露婴配粉（IMF）或爱他美品牌的营收与利润</b>。最细官方数字是「专业特殊营养板块」（92.77 亿欧、利润率 21.7%），但板块还含医学营养（成人 + 儿童特医）与健康老龄化产品——<b>不是奶粉口径，更不是爱他美口径</b>。爱他美单品利润率的精确值，外部拿不到，谁给出精确值谁就是在编。本页做法是用官方三层口径把答案约束在区间内。
+    <b>披露边界（必须先说清）：</b>达能<b>从不单独披露婴配粉（IMF）或爱他美品牌的营收、成本与利润</b>。最细官方数字是「专业特殊营养板块」（92.77 亿欧、利润率 21.7%），而该板块还含医学营养（成人 + 儿童特医）与健康老龄化产品——<b>不是奶粉口径，更不是爱他美口径</b>。所以本页的做法是：<b>用官方统计把成本约束在量级区间，把不可知项明确留空</b>。
   </div>
 
   <div class='callout'>
-    <b>口径红线（务必锁死）：</b>① 三层漏斗（13.4% / 21.7% / 29.2%）均为「经常性经营利润率」口径，与飞鹤 73.5% 的「毛利率」口径<b>不可直接横比</b>；② 图②五段数字是五套口径（原料实算 / 行业测算 / 国际含渠道价 / 经典款终端 / 超高端终端），<b>142 不是达能出厂价，终端价不进达能财报</b>；③ <b>档次必须对齐</b>：经典款（¥165–210）与超高端（¥338–385）是两个价位段，混用会把价差从真实的 1.9 倍夸大到 3.2 倍（详见档次对齐红线）；④ 夹逼出来的成本与利润率都是<b>区间</b>，不是爱他美官方成本表；⑤ 无锡纽迪希亚工厂是<b>医学营养</b>厂（能全力/百普力等），<b>不是爱他美产地</b>，国行爱他美主要欧洲生产进口；⑥ 本页不构成任何购买或投资建议。
+    <b>档次与品牌对齐红线（本页最容易出错的地方）：</b>① <b>禁止跨档比价</b>：爱他美/荷兰牛栏的经典档（¥164.8–210）与超高端档（领熠 ¥338–385）是两个价位段；旧版拿欧洲经典款对国行超高端，把价差从真实的约 2 倍夸大到 <b>3.2 倍</b>（分子为旧版采集的标价 ¥500，已废止）；② <b>禁止跨品牌等价</b>：荷兰牛栏（Nutrilon）与爱他美（Aptamil）是达能旗下两个品牌，德国 Profutura 与国行领熠不是同一产品；③ <b>禁止用均价套单品</b>：海关到岸 ¥113 是全行业混合均价（欧盟 66.7%、新西兰 29.1%、瑞士 1.6%，含各档次），不能套到爱他美任何一款；④ <b>禁止用飞鹤推达能</b>：飞鹤是本土垂直一体化乳企（自有牧场），跨品牌仅作量级参照；⑤ <b>毛利率 ≠ 经营利润率</b>：飞鹤 73.5% 为毛利率（未扣费用），达能 21.7% / 29.2% 为经常性经营利润率（已扣销售/研发/管理），不可横比；⑥ 达能<b>不披露分产品线销量占比</b>，本页不给出"经典款占多少"的估算。
+  </div>
+
+  <div class='callout'>
+    <b>数据可信度说明（本页已做的取舍）：</b>① 已<b>移除</b>三处无法核到出处的行业测算（"生产成本 80–100 元"、"含渠道价 142 元"、"成本结构 原材料60/人工30/包材10"），改用海关进口均价、GDT 拍卖价与上市公司年报等可核数据替代——旧测算与海关到岸价量级接近，但本页以官方统计为准；② 飞鹤销售费用率与婴配粉毛利率<b>均已核到年报原文</b>（非媒体报道转述）；③ 终端电商价<b>标注采集日期</b>（2026-09-04），促销会波动；④ 欧元与美元折算分别采用中国外汇交易中心 2026-09-03 中间价（1 欧元 = 7.8208 元、100 美元 = 678.07 元）；⑤ 税负不做分拆：跨境电商限值内关税暂设 0%、进口环节增值税按法定应纳税额 70% 征收（海关总署公开口径），但增值税适用税率存在不同口径表述，本页不给综合税率数字；⑥ 本页不构成任何购买或投资建议。
   </div>
 
   <!-- 来源区 -->
   <div class='section'>
     <h2>数据来源</h2>
-    <p class='section-desc'>核心数据均来自公开披露与可核验报道，逐条标注核验等级。</p>
+    <p class='section-desc'>全部为可核验的官方披露、官方统计与公开数据，逐条标注核验等级。</p>
     <ul class='src'>
-      <li><span class='tag green'>🟢 官方披露</span><a href='https://www.danone.com/content/dam/corp/global/danonecom/investors/en-all-publications/2026/pressreleases/danonepr200226.pdf'>达能 2025 全年业绩新闻稿（2026-02-20：集团营收 / 分品类与分区域营收 / 分品类及分区域经常性经营利润率 21.7%、29.2%）</a></li>
+      <li><span class='tag green'>🟢 官方披露</span><a href='https://www.danone.com/content/dam/corp/global/danonecom/investors/en-all-publications/2026/pressreleases/danonepr200226.pdf'>达能 2025 全年业绩新闻稿（2026-02-20：营收 / 分品类与分区域营收 / 分品类及分区域经常性经营利润率 21.7%、29.2%）</a></li>
       <li><span class='tag green'>🟢 官方披露</span><a href='https://www.danone.com/brands/specialized-nutrition.html'>Danone 官网专业特殊营养品牌页（板块定义：生命早期营养 + 医学营养 + 健康老龄化）</a></li>
-      <li><span class='tag green'>🟢 官方披露</span><a href='https://www.danone.com/content/dam/corp/global/danonecom/investors/en-all-publications/2019/registrationdocuments/URD_2019_ENG.pdf'>达能 2019 年 URD 注册文件（原文：婴配粉含 Aptamil 与 Nutrilon 等国际品牌、Cow&amp;Gate 为英国本地品牌）</a></li>
-      <li><span class='tag green'>🟢 官方披露</span>中国飞鹤 2025 年度业绩公告（港交所披露易：婴配粉毛利率 73.5%、销售费用率 39.5%；2023–2025 逐年 69.4%→71.3%→73.5%）</li>
-      <li><span class='tag green'>🟢 拍卖数据</span><a href='https://www.gdt.events'>GDT 国际乳制品拍卖（Event 403：脱脂奶粉 $3,547/吨、全脂粉 $3,741/吨；WPC80 约 €20,000/吨为 StoneX 公开报价）</a></li>
-      <li><span class='tag gray'>🟠 第三方调研</span><a href='https://www.chinadrink.net/quote/show-4887.html'>中优食品网 / 王丁棉调研（一罐进口奶粉到岸与岸上加价测算）</a></li>
-      <li><span class='tag gray'>🟠 第三方调研</span><a href='https://www.indexbox.io/search/follow-on-milk-second-stage-price-evidence-european-union-2026/'>IndexBox 欧盟二段奶粉价格证据（2026）：荷兰 Nutrilon 2 800g €19.99；德国 Aptamil Profutura 2 800g €22.99）</a></li>
-      <li><span class='tag gray'>🟠 电商采集</span>爱他美经典版 3 段 800g（天猫旗舰店常卖 ¥164.8 / 专营店常卖 ¥210，2026-09-04 采集）；爱他美领熠（京东 2 段 800g×3 罐 ¥1154.9，折约 ¥385/罐；扬州市发改委民生价格公示 2024-03：领熠 3 段 ¥338、卓傲 3 段 ¥269、爱他美 3 段 ¥175）</li>
-      <li><span class='tag green'>🟢 官方汇价</span>中国外汇交易中心 2026-09-03 人民币汇率中间价：100 欧元 = 782.08 元（本页欧元折算按此汇率）</li>
-      <li><span class='tag gray'>🟠 第三方调研</span><a href='https://www.ah.nl'>Albert Heijn / Jumbo 荷兰超市 Nutrilon 零售价（€15–20/800g 为促销区间观察，常规价以 IndexBox €19.99 为准）</a></li>
-      <li><span class='tag gray'>🟠 第三方调研</span>Kantar Worldpanel（爱他美中国单品牌份额 14%）、欧睿（达能集团 15%、飞鹤 17.5%）、尼尔森 IQ（超高端份额 37%、大盘 −0.2%）</li>
-      <li><span class='tag gray'>🟠 公开报道</span><a href='https://www.foodtalks.cn/news/59719'>小食代（达能 2025 三季报解读，CNAO 专业营养口径）</a> / <a href='https://www.21jingji.com/article/20250607/a7bea1d362c31da5d6628ca22be6ac52.html'>21 世纪经济报道</a>（价格带与渠道） / 新浪财经（曾把 CNAO 大区 27.68 亿欧误标为「中国区」，本页已按官方口径修正）</li>
+      <li><span class='tag green'>🟢 官方披露</span><a href='https://www.danone.com/content/dam/corp/global/danonecom/investors/en-all-publications/2019/registrationdocuments/URD_2019_ENG.pdf'>达能 2019 年 URD（原文：婴配粉含 Aptamil 与 Nutrilon 等国际品牌、Cow&amp;Gate 为英国本地品牌）</a></li>
+      <li><span class='tag green'>🟢 官方统计</span><a href='https://www.dac.org.cn/read/newmydt-26031210390735210150.jhtm'>中国奶业协会《2025 年奶业进出口情况》（引中国海关：进口婴配粉 21.81 万吨 / 45.53 亿美元 / 均价 20,878 美元/吨；欧盟占 66.7%；大包奶粉 4,188 美元/吨；乳清 1,283 美元/吨）</a></li>
+      <li><span class='tag green'>🟢 官方统计</span><a href='https://www.dac.org.cn/read/newzlaqa-26080715161955811440.jhtm'>中国奶业协会《中国奶业经济月报 2026 年 07 月》（GDT 第 405/406 次拍卖：脱脂奶粉 3,457 / 3,368 美元/吨；全脂 3,706 / 3,589 美元/吨）</a></li>
+      <li><span class='tag green'>🟢 官方统计</span><a href='https://www.nahs.org.cn/jcyj/scxs/202604/t20260410_471339.htm'>农业农村部／全国畜牧总站监测（2026 年 3–6 月：10 主产省份生鲜乳均价 3.03 元/公斤）</a></li>
       <li><span class='tag green'>🟢 官方统计</span>国家统计局（2025 年新生人口 792 万）</li>
+      <li><span class='tag green'>🟢 官方披露</span><a href='https://php.cnstock.com/news_new/index.php/api/fileview?ID=20260428D8C83442AC3060C76A83B0DC84407B4A&amp;db=news'>中国飞鹤 2025 年报原文（婴配粉收入 158.68 亿、毛利 116.65 亿、毛利率 73.5%；集团营收 181.13 亿、销售成本 63.37 亿、销售及经销开支 71.62 亿、行政开支 16.83 亿）</a></li>
+      <li><span class='tag green'>🟢 官方政策</span><a href='http://www.customs.gov.cn/customs/2026-01/13/article_2026041015241877353.html'>海关总署跨境电商政策解读（限值内关税暂设 0%，进口环节增值税、消费税按法定应纳税额 70% 征收）</a></li>
+      <li><span class='tag green'>🟢 官方汇价</span>中国外汇交易中心 2026-09-03 人民币汇率中间价：100 欧元 = 782.08 元；100 美元 = 678.07 元</li>
+      <li><span class='tag gray'>🟠 第三方调研</span><a href='https://www.indexbox.io/search/follow-on-milk-second-stage-price-evidence-european-union-2026/'>IndexBox 欧盟二段奶粉价格证据（2026）：荷兰 Nutrilon 2 800g €19.99（etos）；德国 Aptamil Profutura 2 800g €22.99（Rossmann/dm）</a></li>
+      <li><span class='tag gray'>🟠 电商采集</span>爱他美经典版 3 段 800g（天猫旗舰店常卖 ¥164.8 / 专营店常卖 ¥210，2026-09-04）；爱他美领熠（京东 2 段 800g×3 罐 ¥1154.9，折 ¥385/罐，2026-09）；扬州市发改委民生价格公示（2024-03：领熠 3 段 ¥338、2 段 ¥366、1 段 ¥395；卓傲 3 段 ¥269；爱他美 3 段 ¥175）</li>
+      <li><span class='tag gray'>🟠 第三方调研</span>Kantar Worldpanel（爱他美中国单品牌份额 14%）、欧睿（达能集团 15%、飞鹤 17.5%）、尼尔森 IQ（超高端份额 37%，2024 年；价格带结构 2025 年 1–4 月）</li>
     </ul>
   </div>
 
 </div>
 
-<footer>本页为家长消费科普，数据来自公开财报与第三方调研，非投资建议。口径以达能官方披露为准。<br>数据版本：FY2025 全年（2026-02-20 发布）｜原料价格锚：GDT 2026-05（Event 403，非财报数据）｜终端价采集：2026-09-04（电商价随促销波动）｜汇率：1 欧元 = 7.8208 元（2026-09-03 中间价）｜制表日期：2026-09-04</footer>
+<footer>本页为家长消费科普，数据来自官方披露、官方统计与公开电商采集，非投资建议。口径以达能官方披露为准。<br>财务数据版本：FY2025 全年（2026-02-20 发布）｜海关与奶业统计：2025 全年 / 2026 年 6 月｜GDT：第 406 次（2026-06-16）｜终端价采集：2026-09-04（电商价随促销波动）｜汇率：2026-09-03 中间价｜复核日期：2026-09-04</footer>
 
 <script>
 // ① 三层官方利润率漏斗（FY2025，经常性经营利润率口径）
@@ -164,36 +226,36 @@ fn.setOption({
   ],label:{show:true,position:'top',fontSize:13,color:'#34495e',formatter:'{c}%'}}]
 });
 
-// ② 一罐800g五段价格阶梯
-var sq = echarts.init(document.getElementById('chartSqueeze'));
-sq.setOption({
-  tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},
+// ② 从原料到货架：四段可核价格
+var ct = echarts.init(document.getElementById('chartCost'));
+ct.setOption({
+  tooltip:{trigger:'axis',axisPointer:{type:'shadow'},valueFormatter:function(v){return '¥'+v;}},
   grid:{left:8,right:20,top:30,bottom:8,containLabel:true},
-  xAxis:{type:'category',data:['原料成本\n(GDT实算)','生产硬成本\n(行业测算)','国际含渠道价\n(非出厂价)','经典款终端\n(主力档)','超高端终端\n(领熠)'],axisLabel:{fontSize:11,color:'#5a6b7e'},axisLine:{lineStyle:{color:'#dde3ea'}}},
-  yAxis:{type:'value',name:'元/罐',axisLabel:{color:'#8a97a6'},splitLine:{lineStyle:{color:'#eef2f7'}}},
-  series:[{type:'bar',barWidth:'50%',data:[
-    {value:28,itemStyle:{color:'#2E9E6B'}},
-    {value:90,itemStyle:{color:'#7bb89a'}},
-    {value:142,itemStyle:{color:'#1A4FA0'}},
+  xAxis:{type:'category',data:['①大宗乳原料\n(GDT脱脂粉实算)','②进口婴配粉到岸均价\n(海关2025·混合)','③中国终端·经典档','④中国终端·超高端档'],axisLabel:{fontSize:10,color:'#5a6b7e'},axisLine:{lineStyle:{color:'#dde3ea'}}},
+  yAxis:{type:'value',name:'元/800g',axisLabel:{color:'#8a97a6'},splitLine:{lineStyle:{color:'#eef2f7'}}},
+  series:[{type:'bar',barWidth:'46%',data:[
+    {value:18.3,itemStyle:{color:'#2E9E6B'}},
+    {value:113.3,itemStyle:{color:'#1A4FA0'}},
     {value:188,itemStyle:{color:'#E8852B'}},
     {value:362,itemStyle:{color:'#d23b3b'}}
   ],label:{show:true,position:'top',fontSize:11,color:'#34495e',formatter:function(p){
-    var lab=['¥20–35','¥80–100','~¥142','¥165–210','¥338–385'];
+    var lab=['¥18.3','¥113.3','¥164.8–210','¥338–385'];
     return lab[p.dataIndex];
   }}}]
 });
 
-// ③ 同业毛利率锚
-var pr = echarts.init(document.getElementById('chartPeer'));
-pr.setOption({
-  tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},
+// ③ 100元出厂收入去哪了（飞鹤2025年报口径）
+var wh = echarts.init(document.getElementById('chartWhere'));
+wh.setOption({
+  tooltip:{trigger:'axis',axisPointer:{type:'shadow'},valueFormatter:function(v){return v+'%';}},
   grid:{left:8,right:20,top:30,bottom:8,containLabel:true},
-  xAxis:{type:'category',data:['飞鹤\n婴配粉 2025','H&H 健合\n2024*','澳优\n2024*'],axisLabel:{fontSize:11,color:'#5a6b7e'},axisLine:{lineStyle:{color:'#dde3ea'}}},
-  yAxis:{type:'value',name:'毛利率 %',axisLabel:{color:'#8a97a6'},splitLine:{lineStyle:{color:'#eef2f7'}}},
-  series:[{type:'bar',barWidth:'46%',data:[
-    {value:73.5,itemStyle:{color:'#1A4FA0'}},
-    {value:62.45,itemStyle:{color:'#8aa8cd'}},
-    {value:38.64,itemStyle:{color:'#c2ccd6'}}
+  xAxis:{type:'category',data:['销售成本\n(婴配粉口径)','销售及经销开支\n(集团口径)','行政开支\n(集团口径)','净利润率\n(集团口径)'],axisLabel:{fontSize:11,color:'#5a6b7e'},axisLine:{lineStyle:{color:'#dde3ea'}}},
+  yAxis:{type:'value',name:'占营业收入 %',axisLabel:{color:'#8a97a6'},splitLine:{lineStyle:{color:'#eef2f7'}}},
+  series:[{type:'bar',barWidth:'48%',data:[
+    {value:26.5,itemStyle:{color:'#2E9E6B'}},
+    {value:39.5,itemStyle:{color:'#E8852B'}},
+    {value:9.3,itemStyle:{color:'#c2ccd6'}},
+    {value:11.6,itemStyle:{color:'#7b4fb0'}}
   ],label:{show:true,position:'top',fontSize:13,color:'#34495e',formatter:'{c}%'}}]
 });
 
@@ -214,36 +276,37 @@ sh.setOption({
   ],label:{show:true,position:'top',fontSize:12,color:'#34495e',formatter:'{c}%'}}]
 });
 
-// ⑤ 超高端价格带（饼）+ 成本结构（饼）
-var pm = echarts.init(document.getElementById('chartPremium'));
-pm.setOption({
+// ⑤ 进口来源结构（饼）+ 价格带结构（饼）
+var sc = echarts.init(document.getElementById('chartSource'));
+sc.setOption({
   tooltip:{trigger:'item'},
   legend:{bottom:0,textStyle:{fontSize:11,color:'#5a6b7e'}},
   series:[
-    {name:'价格带结构',type:'pie',radius:['0%','32%'],center:['25%','45%'],label:{fontSize:10,formatter:'{b}\n{c}%'},
+    {name:'进口来源(海关2025)',type:'pie',radius:['0%','32%'],center:['25%','45%'],label:{fontSize:10,formatter:'{b}\n{c}%'},
+      data:[
+        {name:'欧盟',value:66.7,itemStyle:{color:'#1A4FA0'}},
+        {name:'新西兰',value:29.1,itemStyle:{color:'#7aa7d6'}},
+        {name:'瑞士',value:1.6,itemStyle:{color:'#7b4fb0'}},
+        {name:'其他',value:2.6,itemStyle:{color:'#c2ccd6'}}
+      ]},
+    {name:'价格带结构(尼尔森2025年1-4月)',type:'pie',radius:['0%','32%'],center:['75%','45%'],label:{fontSize:10,formatter:'{b}\n{c}%'},
       data:[
         {name:'超高端+',value:33.2,itemStyle:{color:'#7b4fb0'}},
         {name:'超高端',value:31.2,itemStyle:{color:'#1A4FA0'}},
         {name:'高端',value:24.2,itemStyle:{color:'#7aa7d6'}},
         {name:'中高端',value:8.6,itemStyle:{color:'#a9c4e2'}},
         {name:'中低端',value:2.7,itemStyle:{color:'#c2ccd6'}}
-      ]},
-    {name:'成本结构',type:'pie',radius:['0%','32%'],center:['75%','45%'],label:{fontSize:10,formatter:'{b}\n{c}%'},
-      data:[
-        {name:'原材料',value:60,itemStyle:{color:'#1A4FA0'}},
-        {name:'人工',value:30,itemStyle:{color:'#7b4fb0'}},
-        {name:'包材',value:10,itemStyle:{color:'#c2ccd6'}}
       ]}
   ]
 });
 
-// ⑥ 同款异地价差
+// ⑥ 同档次对齐比价
 var geo = echarts.init(document.getElementById('chartGeo'));
 geo.setOption({
   tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},
   legend:{data:['欧洲超市价(折人民币)','中国终端价'],top:0,textStyle:{fontSize:12,color:'#5a6b7e'}},
   grid:{left:8,right:20,top:40,bottom:8,containLabel:true},
-  xAxis:{type:'category',data:['经典档\n(Nutrilon经典 / 爱他美经典版)','超高端档\n(Aptamil Profutura / 爱他美领熠)'],axisLabel:{fontSize:11,color:'#5a6b7e'},axisLine:{lineStyle:{color:'#dde3ea'}}},
+  xAxis:{type:'category',data:['经典档\n(Nutrilon 2段 / 爱他美经典版 3段)','超高端档\n(Aptamil Profutura 2段 / 爱他美领熠)'],axisLabel:{fontSize:11,color:'#5a6b7e'},axisLine:{lineStyle:{color:'#dde3ea'}}},
   yAxis:{type:'value',name:'元/800g',axisLabel:{color:'#8a97a6'},splitLine:{lineStyle:{color:'#eef2f7'}}},
   series:[
     {name:'欧洲超市价(折人民币)',type:'bar',barWidth:'30%',data:[172,180],itemStyle:{color:'#2E9E6B'},
@@ -260,7 +323,7 @@ geo.setOption({
 });
 
 window.addEventListener('resize', function(){
-  ['chartFunnel','chartSqueeze','chartPeer','chartShare','chartPremium','chartGeo'].forEach(function(id){
+  ['chartFunnel','chartCost','chartWhere','chartShare','chartSource','chartGeo'].forEach(function(id){
     echarts.getInstanceByDom(document.getElementById(id)).resize();
   });
 });
