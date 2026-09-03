@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>爱他美财务拆解 · 证据页</title>
+<script src='https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js'></script>
+<style>
+  :root{ --blue:#1A4FA0; --navy:#0A1E3F; --ink:#11203a; --muted:#6b7a94; --line:#e3eaf5; --warn:#E8852B; --green:#2E9E6B; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;color:var(--ink);background:#f4f7fc;line-height:1.6}
+  .hero{background:linear-gradient(135deg,var(--blue),var(--navy));color:#fff;padding:38px 20px 30px;text-align:center}
+  .hero .badge{display:inline-block;border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:4px 14px;font-size:14px;opacity:.92}
+  .hero h1{font-size:28px;margin:14px 0 6px}
+  .hero p{opacity:.9;font-size:15px}
+  .wrap{max-width:880px;margin:0 auto;padding:18px 16px 50px}
+  .section{background:#fff;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 10px rgba(20,40,80,.06)}
+  .section h2{font-size:20px;color:var(--blue);margin-bottom:8px}
+  .section-desc{color:var(--muted);font-size:14px;margin-bottom:12px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+  .card{background:#fff;border-radius:12px;padding:14px;border-top:3px solid var(--blue);box-shadow:0 1px 6px rgba(20,40,80,.08)}
+  .card .k{font-size:13px;color:var(--muted)}
+  .card .v{font-size:24px;font-weight:800;margin-top:4px;font-variant-numeric:tabular-nums}
+  .card.warn .v{color:#d23b3b}.card.green .v{color:var(--green)}.card.purple .v{color:#7b4fb0}
+  .chart{width:100%;height:330px}
+  .chart-s{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.7}
+  .callout{border-left:4px solid var(--warn);background:#fff7ee;padding:12px 14px;border-radius:8px;font-size:14px;margin-top:12px}
+  .callout b{color:var(--warn)}
+  .src a{color:var(--blue);word-break:break-all}
+  .src li{margin:6px 0;font-size:13px}
+  .tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:6px;margin-right:6px}
+  .tag.green{background:#e6f6ee;color:var(--green)}
+  .tag.gray{background:#eef1f6;color:var(--muted)}
+  .tag.purple{background:#f1e9fb;color:#7b4fb0}
+  footer{text-align:center;color:var(--muted);font-size:12px;padding:20px;line-height:1.7}
+  .lv{font-size:12px;margin-left:6px}
+</style>
+</head>
+<body>
+
+<div class='hero'>
+  <div class='badge'>葵爸 · 财报拆解</div>
+  <h1>爱他美财务拆解 · 达能专业营养板块</h1>
+  <p>家长消费知情权 · 数据来自达能公开年报与第三方调研</p>
+</div>
+
+<div class='wrap'>
+
+  <!-- 关键数卡片 -->
+  <div class='section'>
+    <h2>一图看懂关键数 <span class='lv'>（🟢审计/官方 · 🟠第三方/估算）</span></h2>
+    <div class='cards'>
+      <div class='card'><div class='k'>达能 2024 营收</div><div class='v'>273.76<small style='font-size:13px'>亿欧</small></div></div>
+      <div class='card green'><div class='k'>专业营养营收</div><div class='v'>89.36<small style='font-size:13px'>亿欧</small></div></div>
+      <div class='card'><div class='k'>集团经营利润率</div><div class='v'>13.0%</div></div>
+      <div class='card purple'><div class='k'>专业营养利润率*</div><div class='v'>~21.5%</div></div>
+      <div class='card green'><div class='k'>爱他美中国份额</div><div class='v'>14%</div></div>
+    </div>
+    <div class='chart-s'>🟢 达能 2024 营收 273.76 亿欧元（+4.3%）、专业营养 89.36 亿欧元（+4.6%）、集团经常性经营利润率 13.0% —— 达能官方新闻稿。<br>🟠 专业营养经营利润率 ~21.5% 为第三方 SWOT 估算（dcfmodeling），达能官方仅披露集团口径 13%，非审计。<br>🟠 爱他美中国份额 14% 为 Kantar Worldpanel 单品牌口径（截至 2024-12）；欧睿口径达能集团含诺优能约 15%，两口径勿混。</div>
+  </div>
+
+  <!-- 核心图1：分品类营收 -->
+  <div class='section'>
+    <h2>核心图①：达能 2024 分品类营收（亿欧元）</h2>
+    <p class='section-desc'>爱他美所在「专业特殊营养」是达能三驾马车之一，体量仅次于基础乳品。</p>
+    <div id='chartRev' class='chart'></div>
+    <div class='chart-s'>🟢 来源：达能 2024 年报官方新闻稿（多源一致）。专业特殊营养含爱他美 / 诺优能 / 牛栏 / 纽迪希亚。</div>
+  </div>
+
+  <!-- 核心图2：经营利润率 -->
+  <div class='section'>
+    <h2>核心图②：各板块经营利润率对比（%）</h2>
+    <p class='section-desc'>奶粉（专业营养）是达能利润最厚的板块。</p>
+    <div id='chartMargin' class='chart'></div>
+    <div class='chart-s'>🟢 集团 13.0% 为达能官方披露。🟠 专业营养 ~21.5% 为第三方估算（非审计）；水业务 11.4%、基础乳品 9.8% 为第三方测算口径。</div>
+  </div>
+
+  <!-- 核心图3：一罐出厂 vs 终端（口径红线重点） -->
+  <div class='section'>
+    <h2>核心图③：一罐爱他美，成本 vs 零售价（元/罐）</h2>
+    <p class='section-desc'>注意三套口径：① <b>生产硬成本</b>（出厂前）② <b>国际含渠道零售价 ~142</b>（到岸 64.7 + 岸上渠道加价 77.72，<b>非达能出厂价</b>）③ <b>国内终端零售价 338/500</b>（含层层渠道加价，不进达能财报）。</p>
+    <div id='chartCan' class='chart'></div>
+    <div class='chart-s'>🟠 生产硬成本 80–100 元、国际含渠道零售价 ~142 元（到岸 64.7 + 岸上渠道加价 77.72，<b>非达能出厂价</b>）为行业测算 / 王丁棉调研，非爱他美官方披露。<br>🟠 国内终端常卖 ¥338 / 标价 ¥500（天猫领熠 3 段 800g）为零售价，含渠道与门店利润，<b>不属于达能财报收入</b>。</div>
+  </div>
+
+  <!-- 核心图4：中国份额 -->
+  <div class='section'>
+    <h2>核心图④：中国婴配粉市场份额（%）</h2>
+    <p class='section-desc'>爱他美单品牌第二；达能集团（含诺优能）口径另算。</p>
+    <div id='chartShare' class='chart'></div>
+    <div class='chart-s'>🟠 爱他美单品牌 14.0%（Kantar Worldpanel，截至 2024-12）；达能集团含诺优能 15.0%（欧睿 2024）。飞鹤 17.5% 第一（欧睿）。两口径分开呈现。</div>
+  </div>
+
+  <!-- 核心图5：超高端 + 成本结构 -->
+  <div class='section'>
+    <h2>核心图⑤：超高端价格带 & 一罐成本结构</h2>
+    <p class='section-desc'>左：2025 年 1–4 月价格带结构；右：生产端成本占比（贵在「卖」不在「造」）。</p>
+    <div id='chartPremium' class='chart'></div>
+    <div class='chart-s'>🟠 价格带结构为 2025 年 1–4 月全渠道占比（21 世纪经济报道引尼尔森）；超高端（&gt;430 元/kg）2024 份额 37%（+4.2pct）。<br>🟠 成本结构（原材料 60% / 人工 30% / 包材 10%）为行业观点（蒋正振），生产端口径。</div>
+  </div>
+
+  <!-- 口径红线 -->
+  <div class='callout'>
+    <b>口径红线（务必锁死）：</b>① 以上达能财报数字均为<b>报表出厂口径</b>，非终端零售价，请勿换算成「300 块里成本多少」；② <b>爱他美无独立财报</b>，全部用「达能集团 + 专业营养板块」代理，属板块级非单品；③ 利润率 ≠ 产品质量，不得暗示「暴利 = 坑你」；④ 非审计项（专业营养利润率、成本拆解、渠道利润）已标注「🟠 第三方 / 估算 / 行业测算」，不得冒充审计数；⑤ 本页不构成任何购买或投资建议。
+  </div>
+
+  <!-- 来源区 -->
+  <div class='section'>
+    <h2>数据来源</h2>
+    <p class='section-desc'>核心数据均来自公开披露与可核验报道，逐条标注核验等级。</p>
+    <ul class='src'>
+      <li><span class='tag green'>🟢 官方披露</span><a href='https://www.danone.com.cn/newsroom/press-releases/danone-reports-strong-fy2024-results'>达能 2024 财年官方新闻稿（营收 / 分品类 / 经营利润率）</a></li>
+      <li><span class='tag green'>🟢 官方披露</span><a href='https://www.danone.com/'>Danone 投资者关系（年报原文，Euronext Paris: BN）</a></li>
+      <li><span class='tag gray'>🟠 第三方估算</span><a href='https://www.dcfmodeling.com/products/bnpa-swot-analysis'>dcfmodeling SWOT（专业营养经营利润率 ~21.5%，非审计）</a></li>
+      <li><span class='tag gray'>🟠 第三方调研</span><a href='https://www.chinadrink.net/quote/show-4887.html'>中优食品网 / 王丁棉调研（一罐进口奶粉到岸与岸上加价测算）</a></li>
+      <li><span class='tag gray'>🟠 第三方调研</span><a href='https://www.nutraingredients-asia.com/Article/2025/03/04/danones-infant-formula-business-going-strong-in-asia-including-china-india/'>Kantar Worldpanel（爱他美中国单品牌份额 14%）、欧睿（达能集团 15%）、尼尔森（超高端份额 37%）</a></li>
+      <li><span class='tag gray'>🟠 公开报道</span><a href='https://finance.sina.cn/2025-03-01/detail-inencnsq9035884.d.html'>新浪财经</a> / <a href='https://www.21jingji.com/article/20250607/a7bea1d362c31da5d6628ca22be6ac52.html'>21 世纪经济报道</a>（2025-03~06，渠道利润、超高端、跨境增长）</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>本页为家长消费科普，数据来自公开年报与第三方调研，非投资建议。口径以达能官方披露为准。</footer>
+
+<script>
+// ① 分品类营收
+var rev = echarts.init(document.getElementById('chartRev'));
+rev.setOption({
+  tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},
+  grid:{left:8,right:20,top:30,bottom:8,containLabel:true},
+  xAxis:{type:'category',data:['基础乳品\n和植物基','专业特殊营养\n(爱他美所在)','饮用水\n和饮料'],axisLabel:{fontSize:12,color:'#5a6b7e'},axisLine:{lineStyle:{color:'#dde3ea'}}},
+  yAxis:{type:'value',name:'亿欧元',axisLabel:{color:'#8a97a6'},splitLine:{lineStyle:{color:'#eef2f7'}}},
+  series:[{type:'bar',barWidth:'46%',data:[
+    {value:134.63,itemStyle:{color:'#c2ccd6'}},
+    {value:89.36,itemStyle:{color:'#1A4FA0'}},
+    {value:49.77,itemStyle:{color:'#c2ccd6'}}
+  ],label:{show:true,position:'top',fontSize:12,color:'#34495e',formatter:'{c}'}}]
+});
+
+// ② 经营利润率
+var mg = echarts.init(document.getElementById('chartMargin'));
+mg.setOption({
+  tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},
+  grid:{left:8,right:20,top:30,bottom:8,containLabel:true},
+  xAxis:{type:'category',data:['专业营养*','集团','水业务','基础乳品'],axisLabel:{fontSize:12,color:'#5a6b7e'},axisLine:{lineStyle:{color:'#dde3ea'}}},
+  yAxis:{type:'value',name:'%',axisLabel:{color:'#8a97a6'},splitLine:{lineStyle:{color:'#eef2f7'}}},
+  series:[{type:'bar',barWidth:'46%',data:[
+    {value:21.5,itemStyle:{color:'#7b4fb0'}},
+    {value:13.0,itemStyle:{color:'#1A4FA0'}},
+    {value:11.4,itemStyle:{color:'#c2ccd6'}},
+    {value:9.8,itemStyle:{color:'#c2ccd6'}}
+  ],label:{show:true,position:'top',fontSize:12,color:'#34495e',formatter:'{c}%'}}]
+});
+
+// ③ 一罐出厂 vs 终端
+var can = echarts.init(document.getElementById('chartCan'));
+can.setOption({
+  tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},
+  legend:{data:['出厂前硬成本','国际含渠道零售价','国内终端常卖','国内终端标价'],top:0,textStyle:{fontSize:12,color:'#5a6b7e'}},
+  grid:{left:8,right:20,top:40,bottom:8,containLabel:true},
+  xAxis:{type:'category',data:['生产硬成本','合理出厂价','国内常卖','国内标价'],axisLabel:{fontSize:12,color:'#5a6b7e'},axisLine:{lineStyle:{color:'#dde3ea'}}},
+  yAxis:{type:'value',name:'元/罐',axisLabel:{color:'#8a97a6'},splitLine:{lineStyle:{color:'#eef2f7'}}},
+  series:[
+    {name:'出厂前硬成本',type:'bar',stack:'a',data:[90,0,0,0],itemStyle:{color:'#2E9E6B'},label:{show:true,position:'top',fontSize:11,formatter:'¥90'}},
+    {name:'国际含渠道零售价',type:'bar',stack:'a',data:[0,142,0,0],itemStyle:{color:'#1A4FA0'},label:{show:true,position:'top',fontSize:11,formatter:'¥142'}},
+    {name:'国内终端常卖',type:'bar',stack:'b',data:[0,0,338,0],itemStyle:{color:'#E8852B'},label:{show:true,position:'top',fontSize:11,formatter:'¥338'}},
+    {name:'国内终端标价',type:'bar',stack:'b',data:[0,0,0,500],itemStyle:{color:'#d23b3b'},label:{show:true,position:'top',fontSize:11,formatter:'¥500'}}
+  ]
+});
+
+// ④ 中国份额
+var sh = echarts.init(document.getElementById('chartShare'));
+sh.setOption({
+  tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},
+  grid:{left:8,right:20,top:30,bottom:8,containLabel:true},
+  xAxis:{type:'category',data:['飞鹤','伊利','达能集团*','爱他美(单品牌)','雀巢','菲仕兰'],axisLabel:{fontSize:11,color:'#5a6b7e'},axisLine:{lineStyle:{color:'#dde3ea'}}},
+  yAxis:{type:'value',name:'%',axisLabel:{color:'#8a97a6'},splitLine:{lineStyle:{color:'#eef2f7'}}},
+  series:[{type:'bar',barWidth:'46%',data:[
+    {value:17.5,itemStyle:{color:'#c2ccd6'}},
+    {value:16.3,itemStyle:{color:'#c2ccd6'}},
+    {value:15.0,itemStyle:{color:'#c2ccd6'}},
+    {value:14.0,itemStyle:{color:'#1A4FA0'}},
+    {value:9.9,itemStyle:{color:'#c2ccd6'}},
+    {value:7.6,itemStyle:{color:'#c2ccd6'}}
+  ],label:{show:true,position:'top',fontSize:12,color:'#34495e',formatter:'{c}%'}}]
+});
+
+// ⑤ 超高端价格带（饼）+ 成本结构（饼）
+var pr = echarts.init(document.getElementById('chartPremium'));
+pr.setOption({
+  tooltip:{trigger:'item'},
+  legend:{bottom:0,textStyle:{fontSize:11,color:'#5a6b7e'}},
+  series:[
+    {name:'价格带结构',type:'pie',radius:['0%','32%'],center:['25%','45%'],label:{fontSize:10,formatter:'{b}\n{c}%'},
+      data:[
+        {name:'超高端+',value:33.2,itemStyle:{color:'#7b4fb0'}},
+        {name:'超高端',value:31.2,itemStyle:{color:'#1A4FA0'}},
+        {name:'高端',value:24.2,itemStyle:{color:'#7aa7d6'}},
+        {name:'中高端',value:8.6,itemStyle:{color:'#a9c4e2'}},
+        {name:'中低端',value:2.7,itemStyle:{color:'#c2ccd6'}}
+      ]},
+    {name:'成本结构',type:'pie',radius:['0%','32%'],center:['75%','45%'],label:{fontSize:10,formatter:'{b}\n{c}%'},
+      data:[
+        {name:'原材料',value:60,itemStyle:{color:'#1A4FA0'}},
+        {name:'人工',value:30,itemStyle:{color:'#7b4fb0'}},
+        {name:'包材',value:10,itemStyle:{color:'#c2ccd6'}}
+      ]}
+  ]
+});
+
+window.addEventListener('resize', function(){
+  ['chartRev','chartMargin','chartCan','chartShare','chartPremium'].forEach(function(id){
+    echarts.getInstanceByDom(document.getElementById(id)).resize();
+  });
+});
+
+// ⚠️ 部署/交付前务必跑 JS 语法自检：node 以 new Function(内联script) 解析，确认 ALL_OK 再上传，
+// 防止双引号截断字符串导致整页崩溃（本页统一使用单引号属性，已规避该风险）。
+</script>
+</body>
+</html>
